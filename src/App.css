@@ -5,14 +5,13 @@
   padding: 0;
   font-family: "Courier New", Courier, monospace;
   color: #dcdcdc;
-  background-color: #1c1c1c; /* Dark gray background */
+  background-color: #1c1c1c; /* Solid dark gray background */
   min-height: 100vh;
 }
 
 /* Navigation Bar */
 .navbar {
-  background-color: #1c1c1c; /* Dark background */
-  color: #dcdcdc;
+  background-color: #1e1e1e;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -20,122 +19,81 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .nav-logo {
-  display: flex; /* Align image and text in a row */
-  align-items: center; /* Center vertically */
-  gap: 0.5rem; /* Space between image and text */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .nav-logo-img {
-  width: 40px; /* Adjust image size */
+  width: 40px;
   height: 40px;
-  border-radius: 50%; /* Make the image circular */
-  border: 2px solid #555; /* Add a subtle border */
+  border-radius: 50%;
+  border: 2px solid #555;
 }
 
-/* Navigation Links with Bubble Styling */
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 1rem;
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
 .nav-links .nav-bubble {
-  background-color: #424448; /* Bubble background */
-  border: 1px solid #555;
+  background-color: #424448;
   border-radius: 16px;
   padding: 0.5rem 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-links .nav-bubble a {
   text-decoration: none;
-  color: #dcdcdc; /* Light gray text */
-  font-size: 1rem;
+  color: #dcdcdc;
   font-weight: bold;
 }
 
 .nav-links .nav-bubble:hover {
-  background-color: #55585c; /* Slightly lighter hover effect */
-  transform: translateY(-2px);
+  transform: scale(1.05);
+  background-color: #55585c;
 }
 
-/* Subtitle Styling */
-.subtitle {
-  font-size: 1rem;
-  color: #8f8f8f; /* Muted gray */
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.5rem;
-}
-
-/* Bubble Effect */
+/* Bubble */
 .bubble {
-  background-color: #424448; /* Bubble background */
-  border: 1px solid #555;
+  background-color: #424448;
   border-radius: 16px;
   padding: 2rem;
+  margin: 3rem auto;
+  max-width: 900px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  max-width: 800px;
-  margin: 2rem auto; /* Centered on page */
-  text-align: left;
-  overflow: visible;
-  word-wrap: break-word; 
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Small Title */
-.small-title {
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Skills Section */
+.skills ul {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills li {
+  background-color: #55585c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
   font-size: 0.9rem;
-  color: #b0b0b0; /* Slightly muted gray */
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-/* Heading inside Bubble */
-.bubble-heading {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #f5f5f5; /* Light gray heading */
-}
-
-/* Paragraph Styling */
-.bubble p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #dcdcdc; /* Very light gray */
-  margin-bottom: 1rem;
-}
-
-.mb-4 {
-  margin-bottom: 0; /* Remove bottom margin for last paragraph */
-}
-
-/* CTA Button */
-.cta-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.5rem;
-  background-color: #55585c; /* Muted gray button */
-  color: #f5f5f5; /* Light text */
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.cta-button:hover {
-  background-color: #6a6d72; /* Slightly darker hover effect */
-  transform: translateY(-3px);
+  color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
