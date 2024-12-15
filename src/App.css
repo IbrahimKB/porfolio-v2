@@ -1,10 +1,37 @@
+/* Root styling */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-span {
-  color: green;
+/* Bubble effect for the About section */
+.bubble {
+  background-color: #f9f9f9; /* Soft light background */
+  border: 1px solid #ddd;    /* Light gray border */
+  border-radius: 10px;       /* Rounded corners */
+  padding: 2rem;             /* Space inside the bubble */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 2rem auto;         /* Centered and spaced out */
+  max-width: 800px;          /* Restrict width for readability */
+  text-align: left;          /* Align text to the left */
+}
+
+/* Typography */
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #333;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.mb-4 {
+  margin-bottom: 0; /* Remove bottom margin for the last paragraph */
 }
