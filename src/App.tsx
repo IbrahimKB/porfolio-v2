@@ -15,57 +15,26 @@ function App() {
             />
             <span>Kaysar's Portfolio</span>
           </div>
-          {/* Right-side: Navigation links with bubbles */}
+          {/* Right-side: Navigation links */}
           <ul className="nav-links">
-            <li className="nav-bubble"><a href="#home">Home</a></li>
-            <li className="nav-bubble"><a href="#about">About Me</a></li>
-            <li className="nav-bubble"><a href="#projects">Projects</a></li>
-            <li className="nav-bubble"><a href="#contact">Contact</a></li>
+            <li className="nav-bubble"><a href="/">Home</a></li>
+            <li className="nav-bubble"><a href="/about">About Me</a></li>
+            <li className="nav-bubble"><a href="/projects">Projects</a></li>
+            <li className="nav-bubble"><a href="/contact">Contact</a></li>
           </ul>
         </div>
       </nav>
 
-      {/* Main Content */}
+      {/* Main Content (Home Page) */}
       <main>
-        {/* Home Section */}
         <section id="home" className="about-section">
-          <h2 className="subtitle">About Me</h2>
+          <h2 className="subtitle">Welcome</h2>
           <div className="bubble">
-            <span className="small-title">kaysar.dev</span>
+            <span className="small-title">kaysar, senior data analyst</span>
             <h3 className="bubble-heading">Hello, I'm Kaysar 👋</h3>
             <p>
-              I'm a dedicated <strong>Data Analyst</strong> and aspiring <strong>Data Scientist</strong> with a strong background in <strong>Python development</strong>, <strong>data analysis</strong>, and <strong>workflow automation</strong>. I specialize in transforming raw data into <strong>actionable insights</strong>, crafting tools that streamline processes, and building <strong>predictive models</strong> that drive impactful decisions.
+              I'm a dedicated <strong>Data Analyst</strong> and aspiring <strong>Data Scientist</strong>. This is the landing page of my portfolio. Navigate to the "About Me", "Projects", and "Contact" pages using the links above.
             </p>
-            <p>
-              This portfolio is a work in progress and reflects my ongoing journey in tech. While I currently showcase a simple automated web scraper, my focus is on expanding my projects to demonstrate my <strong>problem-solving skills</strong>, <strong>technical expertise</strong>, and commitment to building meaningful, <strong>data-driven solutions</strong>.
-            </p>
-            <p>
-              In addition to my data projects, I'm constantly learning and exploring new technologies to stay ahead in the ever-evolving tech landscape. Check back soon for more updates and exciting new projects.
-            </p>
-          </div>
-        </section>
-
-        {/* About Section */}
-        <section id="about" className="about-section">
-          <h2 className="subtitle">About Me</h2>
-          <div className="bubble">
-            <p>This is the dedicated About Me section, where you can include more in-depth details about yourself.</p>
-          </div>
-        </section>
-
-        {/* Projects Section */}
-        <section id="projects" className="about-section">
-          <h2 className="subtitle">Projects</h2>
-          <div className="bubble">
-            <p>Projects will be showcased here.</p>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="about-section">
-          <h2 className="subtitle">Contact</h2>
-          <div className="bubble">
-            <p>Contact information goes here.</p>
           </div>
         </section>
       </main>
