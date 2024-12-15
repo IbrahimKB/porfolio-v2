@@ -1,10 +1,105 @@
+/* Root container */
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  color: #dcdcdc;
+  background-color: #1c1c1c; /* Solid dark gray background */
+  min-height: 100vh;
 }
 
-span {
-  color: green;
+/* Navigation Bar */
+.navbar {
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #555;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links .nav-bubble {
+  background-color: #424448;
+  border-radius: 16px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links .nav-bubble a {
+  text-decoration: none;
+  color: #dcdcdc;
+  font-weight: bold;
+}
+
+.nav-links .nav-bubble:hover {
+  transform: scale(1.05);
+  background-color: #55585c;
+}
+
+/* Bubble */
+.bubble {
+  background-color: #424448;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 900px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Skills Section */
+.skills ul {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills li {
+  background-color: #55585c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #8f8f8f;
+  font-size: 0.9rem;
 }
