@@ -2,11 +2,11 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 2rem;
   font-family: "Courier New", Courier, monospace;
-  color: #dcdcdc;
-  background-color: #1c1c1c; /* Dark gray background */
-  min-height: 100vh;
+  color: #dcdcdc; /* Light gray text */
+  background-color: #1c1c1c; /* Very dark gray background */
+  min-height: 100vh; /* Full viewport height */
 }
 
 /* Navigation Bar */
@@ -60,4 +60,70 @@
 .nav-links .nav-bubble:hover {
   background-color: #55585c; /* Slightly lighter hover effect */
   transform: translateY(-2px);
+}
+
+
+
+
+/* Subtitle Styling */
+.subtitle {
+  font-size: 1rem;
+  color: #8f8f8f; /* Muted gray for subtitles */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+/* Bubble Effect */
+.bubble {
+  background-color: #424448; /* Muted mid-gray bubble */
+  border: 1px solid #555;    /* Slightly darker border */
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  max-width: 800px;
+  margin: 0 auto; /* Centered */
+  text-align: left;
+}
+
+/* Small Title */
+.small-title {
+  font-size: 0.9rem;
+  color: #b0b0b0; /* Slightly muted gray text */
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Heading inside Bubble */
+.bubble-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #f5f5f5; /* Very light gray heading */
+}
+
+/* Paragraph Styling */
+.bubble p {
+  line-height: 1.6;
+  color: #dcdcdc; /* Light gray for paragraphs */
+  margin-bottom: 1rem;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #55585c; /* Slightly lighter gray for button */
+  color: #f5f5f5; /* Light text */
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #6a6d72; /* Hover effect with lighter gray */
+  transform: translateY(-3px);
 }
