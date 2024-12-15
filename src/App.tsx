@@ -28,7 +28,6 @@ function App() {
       {/* Main Content */}
       <main>
         <section id="home" className="about-section">
-          <h2 className="subtitle">Welcome</h2>
           <div className="bubble">
             <span className="small-title">kaysar.dev</span>
             <h3 className="bubble-heading">Hello, I'm Kaysar 👋</h3>
