@@ -27,9 +27,16 @@
 }
 
 .nav-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #f5f5f5;
+  display: flex; /* Align image and text in a row */
+  align-items: center; /* Center vertically */
+  gap: 0.5rem; /* Space between image and text */
+}
+
+.nav-logo-img {
+  width: 40px; /* Adjust image size */
+  height: 40px;
+  border-radius: 50%; /* Make the image circular */
+  border: 2px solid #555; /* Add a subtle border */
 }
 
 /* Navigation Links with Bubble Styling */
