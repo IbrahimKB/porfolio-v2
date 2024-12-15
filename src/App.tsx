@@ -32,7 +32,7 @@ function App() {
             <span className="small-title">kaysar.dev</span>
             <h3 className="bubble-heading">Hello, I'm Kaysar 👋</h3>
             <p>
-              {`Hello! I'm Kaysar, a dedicated Data Analyst and aspiring Data Scientist with a strong background in 
+              {`I'm a dedicated Data Analyst and aspiring Data Scientist with a strong background in 
               Python development, data analysis, and workflow automation. I specialize in transforming raw data into 
               actionable insights, crafting tools that streamline processes, and building predictive models that drive 
               impactful decisions.`}
