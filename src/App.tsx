@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <div>i am in love with kulsum jama</div>
+      <div>fine.</div>
       <span>teehee</span>
     </>
   );
