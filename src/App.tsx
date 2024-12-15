@@ -24,7 +24,7 @@ function App() {
           <h2 className="subtitle">About Me</h2>
           {/* About section bubble */}
           <div className="bubble">
-            <span className="small-title">kaysar.dev</span>
+            <span className="small-title">kaysar, senior data analyst</span>
             <h3 className="bubble-heading">Hello, I'm Kaysar 👋</h3>
             <p>
               I'm a dedicated <strong>Data Analyst</strong> and aspiring <strong>Data Scientist</strong> with a strong background in <strong>Python development</strong>, <strong>data analysis</strong>, and <strong>workflow automation</strong>. I specialize in transforming raw data into <strong>actionable insights</strong>, crafting tools that streamline processes, and building <strong>predictive models</strong> that drive impactful decisions.
