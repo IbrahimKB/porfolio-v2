@@ -34,7 +34,6 @@ function App() {
       {/* Main Content */}
       <main>
         <section id="home" className="about-section">
-          <h2 className="subtitle">Welcome</h2>
           <div className="bubble fade-in">
             <span className="small-title">kaysar, senior data analyst</span>
             <h3 className="bubble-heading">{`${getGreeting()}, I'm Kaysar 👋`}</h3>
