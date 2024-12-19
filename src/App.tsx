@@ -1,13 +1,19 @@
 import './App.css';
+import React, { useState, useEffect } from 'react';
 
 function App() {
-  // Dynamic greeting based on time of day
-  const getGreeting = () => {
+  const [greeting, setGreeting] = useState('');
+
+  // Dynamic Greeting
+  useEffect(() => {
     const hour = new Date().getHours();
-    if (hour < 12) return 'Good Morning';
-    if (hour < 18) return 'Good Afternoon';
-    return 'Good Evening';
-  };
+    if (hour < 5) setGreeting('Night Owl? I\'m Kaysar 🦉');
+    else if (hour < 8) setGreeting('Rise and Shine! I\'m Kaysar 👋');
+    else if (hour < 12) setGreeting('Good Morning! I\'m Kaysar ☕');
+    else if (hour < 17) setGreeting('Good Afternoon! I\'m Kaysar 🌞');
+    else if (hour < 21) setGreeting('Good Evening! I\'m Kaysar 🌙');
+    else setGreeting('Burning the Midnight Oil? I\'m Kaysar 💻');
+  }, []);
 
   return (
     <div id="root">
@@ -23,55 +29,49 @@ function App() {
             <span>Kaysar's Portfolio</span>
           </div>
           <ul className="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/about">About Me</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li className="nav-bubble active"><a href="/">Home</a></li>
+            <li className="nav-bubble"><a href="/about">About Me</a></li>
+            <li className="nav-bubble"><a href="/projects">Projects</a></li>
+            <li className="nav-bubble"><a href="/contact">Contact</a></li>
           </ul>
         </div>
       </nav>
 
       {/* Main Content */}
-      <main className="main-container">
-        {/* About Me Section */}
-        <section className="about-section">
-          <div className="about-content">
-            <h2>About Me</h2>
+      <main>
+        <section id="home" className="about-section">
+          <div className="bubble fade-in">
+            <span className="small-title">kaysar, senior data analyst</span>
+            <h3 className="bubble-heading">{greeting}</h3>
             <p>
-              {`${getGreeting()}, I'm Kaysar 👋! I'm a dedicated Data Analyst and aspiring Data Scientist with a strong 
-              background in Python development, data analysis, and workflow automation. I specialize in transforming raw data into 
-              actionable insights, crafting tools that streamline processes, and building predictive models that drive impactful decisions.`}
+              {`I'm a dedicated Data Analyst and aspiring Data Scientist with a strong background in 
+              Python development, data analysis, and workflow automation. I specialize in transforming raw data into 
+              actionable insights, crafting tools that streamline processes, and building predictive models that drive 
+              impactful decisions.`}
             </p>
-            <p>
-              {`This portfolio is a work in progress and reflects my ongoing journey in tech. While I currently showcase a 
-              simple automated web scraper, my focus is on expanding my projects to demonstrate my problem-solving skills, 
+            <p className="mb-4">
+              {`This portfolio is a work in progress and reflects my ongoing journey in tech. While I currently showcase 
+              a simple automated web scraper, my focus is on expanding my projects to demonstrate my problem-solving skills, 
               technical expertise, and commitment to building meaningful, data-driven solutions.`}
             </p>
           </div>
 
-          {/* Current Role Highlight */}
-          <div className="current-role-card">
-            <p>Current Role: Senior Data Analyst</p>
-          </div>
-        </section>
-
-        {/* Projects Carousel */}
-        <section className="projects-carousel">
-          <h2>Featured Projects</h2>
-          <div className="carousel">
-            <div className="carousel-item">Project 1: Automated Web Scraper</div>
-            <div className="carousel-item">Project 2: Machine Learning Model</div>
-            <div className="carousel-item">Project 3: Interactive Dashboard</div>
-          </div>
+          {/* Featured Projects */}
+          <section className="projects-section">
+            <h4>Featured Projects</h4>
+            <div className="project-cards">
+              <div className="project-card">Project 1: Automated Web Scraper</div>
+              <div className="project-card">Project 2: Machine Learning Model</div>
+              <div className="project-card">Project 3: Interactive Dashboard</div>
+            </div>
+          </section>
         </section>
       </main>
 
       {/* Footer */}
       <footer>
         <p>© 2024 Kaysar. All rights reserved.</p>
-        <div className="social-links">
-          <a href="https://linkedin.com/in/ibrahim-boksh">LinkedIn</a>
-        </div>
+        <a href="https://linkedin.com/in/your-profile" className="social-link">LinkedIn</a>
       </footer>
     </div>
   );
