@@ -1,9 +1,10 @@
+import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
   const [greeting, setGreeting] = useState('');
 
-  // Dynamic Greeting
+  // Dynamic Greeting Logic
   useEffect(() => {
     const hour = new Date().getHours();
     if (hour < 5) setGreeting('Night Owl? I\'m Kaysar 🦉');
@@ -38,6 +39,7 @@ function App() {
 
       {/* Main Content */}
       <main>
+        {/* About Section */}
         <section id="home" className="about-section">
           <div className="bubble fade-in">
             <span className="small-title">kaysar, senior data analyst</span>
@@ -54,16 +56,16 @@ function App() {
               technical expertise, and commitment to building meaningful, data-driven solutions.`}
             </p>
           </div>
+        </section>
 
-          {/* Featured Projects */}
-          <section className="projects-section">
-            <h4>Featured Projects</h4>
-            <div className="project-cards">
-              <div className="project-card">Project 1: Automated Web Scraper</div>
-              <div className="project-card">Project 2: Machine Learning Model</div>
-              <div className="project-card">Project 3: Interactive Dashboard</div>
-            </div>
-          </section>
+        {/* Featured Projects Section */}
+        <section className="projects-section">
+          <h4>Featured Projects</h4>
+          <div className="project-cards">
+            <div className="project-card">Project 1: Automated Web Scraper</div>
+            <div className="project-card">Project 2: Machine Learning Model</div>
+            <div className="project-card">Project 3: Interactive Dashboard</div>
+          </div>
         </section>
       </main>
 
