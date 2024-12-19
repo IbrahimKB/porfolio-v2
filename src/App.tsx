@@ -69,6 +69,9 @@ function App() {
       {/* Footer */}
       <footer>
         <p>© 2024 Kaysar. All rights reserved.</p>
+        <div className="social-links">
+          <a href="https://linkedin.com/in/ibrahim-boksh">LinkedIn</a>
+        </div>
       </footer>
     </div>
   );

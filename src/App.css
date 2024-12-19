@@ -1,23 +1,34 @@
-/* Root container */
-#root {
-  font-family: 'Arial', sans-serif;
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
   color: #333;
-  background-color: #fff;
+  background-color: #fafafa;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  max-width: 1200px;
-  margin: 0 auto; /* Center the content */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #555;
 }
 
 /* Navigation Bar */
 .navbar {
-  background-color: #f8f9fa;
+  background-color: #fff;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .nav-logo {
@@ -92,9 +103,10 @@
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
 }
 
-/* Projects Carousel */
+/* Projects Section */
 .projects-carousel {
   margin-top: 2rem;
   text-align: center;
@@ -115,9 +127,11 @@
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  text-align: center;
-  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
 }
 
 /* Footer */
@@ -126,5 +140,14 @@ footer {
   padding: 1rem;
   background-color: #f8f9fa;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #eaeaea;
+}
+
+footer a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+footer a:hover {
+  color: #0056b3;
 }
