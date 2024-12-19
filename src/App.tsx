@@ -23,46 +23,38 @@ function App() {
             <span>Kaysar's Portfolio</span>
           </div>
           <ul className="nav-links">
-            <li className="nav-bubble"><a href="/">Home</a></li>
-            <li className="nav-bubble"><a href="/about">About Me</a></li>
-            <li className="nav-bubble"><a href="/projects">Projects</a></li>
-            <li className="nav-bubble"><a href="/contact">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
       </nav>
 
       {/* Main Content */}
-      <main>
-        <section id="home" className="about-section">
-          <div className="bubble fade-in">
-            <span className="small-title">kaysar, senior data analyst</span>
-            <h3 className="bubble-heading">{`${getGreeting()}, I'm Kaysar 👋`}</h3>
+      <main className="main-container">
+        {/* About Me Section */}
+        <section className="about-section">
+          <div className="about-content">
+            <h2>About Me</h2>
             <p>
-              {`I'm a dedicated Data Analyst and aspiring Data Scientist with a strong background in 
-              Python development, data analysis, and workflow automation. I specialize in transforming raw data into 
-              actionable insights, crafting tools that streamline processes, and building predictive models that drive 
-              impactful decisions.`}
+              {`${getGreeting()}, I'm Kaysar 👋! I'm a dedicated Data Analyst and aspiring Data Scientist with a strong 
+              background in Python development, data analysis, and workflow automation. I specialize in transforming raw data into 
+              actionable insights, crafting tools that streamline processes, and building predictive models that drive impactful decisions.`}
             </p>
-            <p className="mb-4">
-              {`This portfolio is a work in progress and reflects my ongoing journey in tech. While I currently showcase 
-              a simple automated web scraper, my focus is on expanding my projects to demonstrate my problem-solving skills, 
+            <p>
+              {`This portfolio is a work in progress and reflects my ongoing journey in tech. While I currently showcase a 
+              simple automated web scraper, my focus is on expanding my projects to demonstrate my problem-solving skills, 
               technical expertise, and commitment to building meaningful, data-driven solutions.`}
             </p>
-            <p className="mb-4">
-              {`In addition to my data projects, I'm constantly learning and exploring new technologies to stay ahead in 
-              the ever-evolving tech landscape. Check back soon for more updates and exciting new projects.`}
-            </p>
+          </div>
 
-            {/* Skills Section */}
-            <div className="skills">
-              <h4>Skills</h4>
-              <ul>
-                <li>Python 🐍</li>
-                <li>Data Analysis 📊</li>
-                <li>Machine Learning 🤖</li>
-                <li>Workflow Automation ⚙️</li>
-              </ul>
-            </div>
+          {/* Current Role Highlight */}
+          <div className="current-role-card">
+            <h3>Current Role</h3>
+            <p>
+              Senior Data Analyst at Gain Theory, leading data-driven initiatives across EMEA, APAC, and LATAM.
+            </p>
           </div>
         </section>
       </main>
