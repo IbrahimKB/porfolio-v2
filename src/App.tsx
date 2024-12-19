@@ -51,10 +51,17 @@ function App() {
 
           {/* Current Role Highlight */}
           <div className="current-role-card">
-            <h3>Current Role</h3>
-            <p>
-              Senior Data Analyst at Gain Theory, leading data-driven initiatives across EMEA, APAC, and LATAM.
-            </p>
+            <p>Current Role: Senior Data Analyst</p>
+          </div>
+        </section>
+
+        {/* Projects Carousel */}
+        <section className="projects-carousel">
+          <h2>Featured Projects</h2>
+          <div className="carousel">
+            <div className="carousel-item">Project 1: Automated Web Scraper</div>
+            <div className="carousel-item">Project 2: Machine Learning Model</div>
+            <div className="carousel-item">Project 3: Interactive Dashboard</div>
           </div>
         </section>
       </main>

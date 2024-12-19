@@ -6,6 +6,8 @@
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
 }
 
 /* Navigation Bar */
@@ -49,22 +51,17 @@
 
 /* Main Content Layout */
 .main-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   padding: 2rem;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
 /* About Me Section */
 .about-section {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
-  max-width: 1200px;
-  width: 100%;
+  flex-wrap: wrap;
 }
 
 .about-content {
@@ -89,21 +86,38 @@
 /* Current Role Card */
 .current-role-card {
   flex: 1;
-  background-color: #007bff;
-  color: #fff;
-  padding: 1.5rem;
+  background-color: #e0e0e0; /* Muted light gray */
+  color: #333;
+  padding: 1rem;
   border-radius: 8px;
+  text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Carousel */
+.projects-carousel {
+  margin-top: 2rem;
   text-align: center;
 }
 
-.current-role-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.projects-carousel h2 {
+  margin-bottom: 1rem;
 }
 
-.current-role-card p {
-  font-size: 1rem;
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-item {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+  max-width: 200px;
 }
 
 /* Footer */
